@@ -1,0 +1,12 @@
+Email Verification API adalah API sederhana yang dibuat menggunakan Lumen Laravel yang ditujukan untuk terhubung ke server email menggunakan MX record dan mensimulasikan pengiriman pesan untuk memastikan keberadaan kotak surat.
+Untuk menguji API ini dapat mengirim permintaan POST ke http://localhost:8000/verifymail (sesuaikan port url)
+dengan payload JSON berikut:
+{
+  "email": "user@example.com"
+}
+
+result yang dihasilkan :
+{
+    "success": true,
+    "message": "Mailbox exists"
+}
